@@ -1,3 +1,6 @@
+# Objectifs:
+Ce fork a pour objectif la mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana). J'en profite au passage pour traduire en francais les explications fournies par sm-biz.
+
 Palo Alto Networks Firewall Visualization using Elastic Stack
 
 ## Dashboards
