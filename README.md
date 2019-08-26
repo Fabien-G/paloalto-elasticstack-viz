@@ -44,7 +44,7 @@ En bref, Elastic Stack (ELK) fournit une plate-forme simple, évolutive et robus
 
 Elastic Stack inclut également un serveur syslog intégré, ce qui simplifie grandement le déploiement de la solution comme un tout.
 
-En utilisant uniquement le fichier de configuration du pipeline Elastic Stack, nous avons tout ce qu'il faut pour une solution tout-en-un.
+En utilisant uniquement le fichier de configuration d'Elastic Stack, nous avons tout ce qu'il faut pour une solution tout-en-un.
 
 **Credit**
 
@@ -53,13 +53,13 @@ Une grande partie de ce projet a été créé sur la base des pages suivantes:
 * [ELK + PALO ALTO NETWORKS](https://anderikistan.com/2016/03/26/elk-palo-alto-networks/) by [Ian Anderson](https://twitter.com/anderikistan)
 * [PANW Firewall Visualisations using Elastic Stack](https://github.com/sm-biz/paloalto-elasticstack-viz)
 
-=> Un grand merci pour leur travail
+=> Un grand merci pour leurs travail
 
 
 ## Tutoriel
 
-Ce projet a été monté sur un Ubuntu 16.04 LTS, en utilisant la dernière version d'Elastic Stack 6.1 (avec serveur syslog intégré) et un pare-feu PA-220.
-nginx a été utilisé pour sécuriser l'authentification vers Kibana via reverse-proxy
+Ce projet a été monté sur un Ubuntu 16.04 LTS, en utilisant la version d'Elastic Stack 6.1 (avec serveur syslog intégré) et un pare-feu PA-220.
+nginx a été utilisé pour sécuriser l'authentification vers Kibana via reverse-proxy.
 
 Pour ceux qui ne sont pas familiers avec une partie de la pile ELK, un tutoriel complet sur l'installation et la configuration d'Elastic Stack existe, incluant la sécurisation de la plate-forme et l'installation des visualisations.
 Ce tutoriel créé par sm-biz (encore merci) est[disponible ici](https://github.com/sm-biz/paloalto-elasticstack-viz/wiki)
@@ -83,8 +83,8 @@ Sinon, si vous êtes à l'aise avec la suite ELK, alors tout ce que vous avez à
   - LogStash
   
 - Edit 'PAN-OS.conf'
-  - **Set your timezone correctly** *(Very important)*
-  - Copy the file into your **conf** directory. For Ubuntu/Debian this is "/etc/logstash/conf.d/", other directories are [available here](https://www.elastic.co/guide/en/logstash/current/dir-layout.html)
+  - **Définir votre timezone** *(Very important)*
+  - Copier le fichier dans votre dossier **conf**. Pour Ubuntu/Debian il se trouve dans "/etc/logstash/conf.d/", les répertoires des autres  [available here](https://www.elastic.co/guide/en/logstash/current/dir-layout.html)
 
 - Upload the two pre-built index templates with additional GeoIP fields
 ```
