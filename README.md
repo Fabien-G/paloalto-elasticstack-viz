@@ -47,13 +47,14 @@ Elastic Stack inclut également un serveur syslog intégré, ce qui simplifie gr
 En utilisant uniquement le fichier de configuration du pipeline Elastic Stack, nous avons tout ce qu'il faut pour une solution tout-en-un.
 
 **Credit**
+
 Une grande partie de ce projet a été créé sur la base des pages suivantes:
 * [Shadow-Box's ELK template for Traffic & Threat Logs](https://github.com/shadow-box/Palo-Alto-Networks-ELK-Stack)
 * [ELK + PALO ALTO NETWORKS](https://anderikistan.com/2016/03/26/elk-palo-alto-networks/) by [Ian Anderson](https://twitter.com/anderikistan)
-* [
-PANW Firewall Visualisations using Elastic Stack](https://github.com/sm-biz/paloalto-elasticstack-viz)
+* [PANW Firewall Visualisations using Elastic Stack](https://github.com/sm-biz/paloalto-elasticstack-viz)
 
 => Un grand merci pour leur travail
+
 
 ## Tutorial
 
