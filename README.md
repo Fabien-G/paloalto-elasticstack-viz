@@ -1,4 +1,4 @@
-Mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana). 
+Mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana).
 J'en profite au passage pour traduire en francais les explications fournies par sm-biz (merci à lui).
 
 
@@ -56,19 +56,20 @@ Une grande partie de ce projet a été créé sur la base des pages suivantes:
 => Un grand merci pour leur travail
 
 
-## Tutorial
+## Tutoriel
 
-This project was built on Ubuntu 16.04 LTS, using the latest Elastic Stack 6.1 (with integrated syslog server) and a PA-220 Firewall.
-nginx was used to secure authentication to Kibana via reverse-proxy
+Ce projet a été monté sur un Ubuntu 16.04 LTS, en utilisant la dernière version d'Elastic Stack 6.1 (avec serveur syslog intégré) et un pare-feu PA-220.
+nginx a été utilisé pour sécuriser l'authentification vers Kibana via reverse-proxy
 
-For those unfamilar with any part of this technology stack, I have created a full tutorial on installing & configuring Elastic Stack, including security the platform & installing the visualisations. :blue_book: The tutorial is [available here](https://github.com/sm-biz/paloalto-elasticstack-viz/wiki)
+Pour ceux qui ne sont pas familiers avec une partie de la pile ELK, un tutoriel complet sur l'installation et la configuration d'Elastic Stack existe, incluant la sécurisation de la plate-forme et l'installation des visualisations.
+Ce tutoriel créé par sm-biz (encore merci) est[disponible ici](https://github.com/sm-biz/paloalto-elasticstack-viz/wiki)
 
 
 ## Existing Install
 
-Otherwise, if you're comfortable with the technology stack mentioned above, then all you need to do is;
+Sinon, si vous êtes à l'aise avec la suite ELK, alors tout ce que vous avez à faire est:
 
-- Download the files from this repo
+- Télécharger les fichiers de ce repo
   - PAN-OS.conf
   - traffic_template_mapping-v1.json
   - threat_template_mapping-v1.json
@@ -76,10 +77,11 @@ Otherwise, if you're comfortable with the technology stack mentioned above, then
   - visualisations-base.json
   - dashboards-base.json
 
-- Install Elastic Stack 6.1
+- Installer Elastic Stack 6.1
   - ElasticSearch
   - Kibana
   - LogStash
+  
 - Edit 'PAN-OS.conf'
   - **Set your timezone correctly** *(Very important)*
   - Copy the file into your **conf** directory. For Ubuntu/Debian this is "/etc/logstash/conf.d/", other directories are [available here](https://www.elastic.co/guide/en/logstash/current/dir-layout.html)
