@@ -5,7 +5,7 @@ J'en profite au passage pour traduire en francais les explications fournies par 
 
 Le projet comprend neuf tableaux de bord, qui ont été pré-construits à partir des visualisations incluses.
 
-Overview Dashboard | Threat Dashboard | Traffic Dashboard
+Vue d'ensemble | Tableau des menaces | Tableau du traffic
 ------------ | ------------- | -------------
 [![Dashboard - Overview](https://i.imgur.com/xxl0XCfm.png)](https://i.imgur.com/xxl0XCf.png) | [![Dashboard - Threats](https://i.imgur.com/obE4dIbm.png)](https://i.imgur.com/obE4dIb.png) | [![Dashboard - Traffic](https://i.imgur.com/xuxsmnom.png)](https://i.imgur.com/xuxsmno.png)
 
