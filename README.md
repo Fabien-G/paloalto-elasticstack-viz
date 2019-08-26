@@ -1,6 +1,7 @@
 Mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana). 
 J'en profite au passage pour traduire en francais les explications fournies par sm-biz (merci à lui).
 
+
 ## Dashboards
 
 Le projet comprend neuf tableaux de bord, qui ont été pré-construits à partir des visualisations incluses.
@@ -21,6 +22,7 @@ Par défaut, les tableaux de bord sont configurés pour le thème sombre.
 Une fois installés, vous pouvez les changer pour le thème clair, ajouter/supprimer/réorganiser des visualisations individuelles ou créer vos propres tableaux de bord.
 Les tableaux de bord peuvent également être configurés pour fonctionner en plein écran et rafraîchissement automatique, parfait pour les écrans de supervision.
 
+
 ## Contexte
 
 Ce projet vise à fournir un moyen simple d'extraire et de visualiser les données syslog des pare-feu de Palo Alto.
@@ -36,13 +38,13 @@ Une suite complète de visualisations et de tableaux de bord est incluse.
 
 **Elastic Stack**
 
-[(from the site)](https://www.elastic.co/elk-stack): What is ELK? "ELK" is the acronym for three open source projects: Elasticsearch, Logstash, and Kibana. Elasticsearch is a search and analytics engine. Logstash is a server-side data processing pipeline that ingests data from multiple sources simultaneously, transforms it, and then sends it to a "stash" like Elasticsearch. Kibana lets users visualize data with charts and graphs in Elasticsearch.
+[(from the site)](https://www.elastic.co/elk-stack): Qu'est-ce que ELK ? "ELK" est l'acronyme de trois projets open source : Elasticsearch, Logstash et Kibana. Elasticsearch est un moteur de recherche et d'analyse. Logstash est un pipeline de traitement de données côté serveur qui ingère des données provenant de plusieurs sources simultanément, les transforme, puis les envoie à une "stash" comme Elasticsearch. Kibana permet aux utilisateurs de visualiser les données à l'aide de tableaux et de graphiques dans Elasticsearch.
 
-In short, the Elastic Stack provides a simple, scalable & robust platform ingesting syslog entries from a PANW Firewall and displaying the output. The required configuration for LogStash & ElasticSearch is provided here, along with a number of pre-built visualisations for Kibana. You can build your own, additional visualisations using the Kibana interface quite easily. All of the base visualisatons in this project were built in a single day.
+En bref, Elastic Stack (ELK) fournit une plate-forme simple, évolutive et robuste ingérant les entrées syslog d'un pare-feu Palo Alto (PANW) et affichant leurs sorties. La configuration requise pour LogStash & ElasticSearch est fournie ici, ainsi qu'un certain nombre de visualisations prédéfinies pour Kibana. L'interface Kibana vous permet de créer vos propres visualisations supplémentaires en toute simplicité. Toutes les visualisations de base de ce projet ont été construites en une seule journée.
 
-Elastic Stack also includes a built-in syslog server, which greatly simplifies the deployment of the solution as a whole.
-Using only the Elastic Stack pipeline configuration file, we have everything required for an all-in-one solution
-  
+Elastic Stack inclut également un serveur syslog intégré, ce qui simplifie grandement le déploiement de la solution comme un tout.
+
+En utilisant uniquement le fichier de configuration du pipeline Elastic Stack, nous avons tout ce qu'il faut pour une solution tout-en-un.  
 
 **Credit**
 
@@ -50,12 +52,14 @@ Much of this project was created based on the following pages from awesome peopl
 * [Shadow-Box's ELK template for Traffic & Threat Logs](https://github.com/shadow-box/Palo-Alto-Networks-ELK-Stack)
 * [ELK + PALO ALTO NETWORKS](https://anderikistan.com/2016/03/26/elk-palo-alto-networks/) by [Ian Anderson](https://twitter.com/anderikistan)
 
+
 ## Tutorial
 
 This project was built on Ubuntu 16.04 LTS, using the latest Elastic Stack 6.1 (with integrated syslog server) and a PA-220 Firewall.
 nginx was used to secure authentication to Kibana via reverse-proxy
 
 For those unfamilar with any part of this technology stack, I have created a full tutorial on installing & configuring Elastic Stack, including security the platform & installing the visualisations. :blue_book: The tutorial is [available here](https://github.com/sm-biz/paloalto-elasticstack-viz/wiki)
+
 
 ## Existing Install
 
