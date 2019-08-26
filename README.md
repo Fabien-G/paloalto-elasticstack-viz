@@ -2,7 +2,7 @@ Mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (Elasti
 J'en profite au passage pour traduire en francais les explications fournies par sm-biz (merci à lui).
 
 
-## Dashboards
+## Tableaux de bord
 
 Le projet comprend neuf tableaux de bord, qui ont été pré-construits à partir des visualisations incluses.
 
