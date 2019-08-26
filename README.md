@@ -1,40 +1,38 @@
-# Objectifs:
-Ce fork a pour objectif la mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana). J'en profite au passage pour traduire en francais les explications fournies par sm-biz.
-
-Palo Alto Networks Firewall Visualization using Elastic Stack
+Mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana). 
+J'en profite au passage pour traduire en francais les explications fournies par sm-biz (merci à lui).
 
 ## Dashboards
 
-The projects includes nine dashboards, that have been pre-built from the included visualisations. 
+Le projet comprend neuf tableaux de bord, qui ont été pré-construits à partir des visualisations incluses.
 
 Overview Dashboard | Threat Dashboard | Traffic Dashboard
 ------------ | ------------- | -------------
 [![Dashboard - Overview](https://i.imgur.com/xxl0XCfm.png)](https://i.imgur.com/xxl0XCf.png) | [![Dashboard - Threats](https://i.imgur.com/obE4dIbm.png)](https://i.imgur.com/obE4dIb.png) | [![Dashboard - Traffic](https://i.imgur.com/xuxsmnom.png)](https://i.imgur.com/xuxsmno.png)
 
-In addition to the above, there are dashboards for;
+En plus de ce qui précède, il existe des tableaux de bord pour;
 * Applications
-* Threat Highlights
-* URL Filtering
-* Blocked URLs
+* Threat Highlights (menaces marquantes)
+* URL Filtering (filtrage d'URL)
+* Blocked URLs (blocage d'URL)
 * System Logs & Events
-* Config Overview
+* Config Overview (vue d'ensemble de la configuration)
 
-By default, the dashboards are configured for the dark theme.
-Once installed, you can change them to the light theme, add/delete/rearrange individual visualisations or create your own dashboards
-The dashboards can also be configured to run full-screen and auto-refresh, perfect for office screenboards
+Par défaut, les tableaux de bord sont configurés pour le thème sombre.
+Une fois installés, vous pouvez les changer pour le thème clair, ajouter/supprimer/réorganiser des visualisations individuelles ou créer vos propres tableaux de bord.
+Les tableaux de bord peuvent également être configurés pour fonctionner en plein écran et rafraîchissement automatique, parfait pour les écrans de supervision.
 
-## Background
+## Contexte
 
-This project aims to provide a simple way to extract and visualise syslog data from Palo Alto Networks firewalls.
-It utilises the free Elastic Stack from [www.elastic.co](https://www.elastic.co/elk-stack) as the base platform data & viz platform, and provides a pipeline configuration and index templates for the following logs;
+Ce projet vise à fournir un moyen simple d'extraire et de visualiser les données syslog des pare-feu de Palo Alto.
+Il utilise Elastic Stack (gratuit) de [www.elastic.co](https://www.elastic.co/elk-stack) comme plate-forme de données et de visualisation. Il fournit une configuration et des modèles d'index, pour les journaux suivants:
 
 * Traffic
 * Threat/URL
 * Config
 * System
 
-A full suite of visualisations and dashboards is included
-  
+Une suite complète de visualisations et de tableaux de bord est incluse.
+
 
 **Elastic Stack**
 
