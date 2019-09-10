@@ -1,8 +1,12 @@
 *** Projet en cours au 10/09/2019 ***  !!! Ne pas se fier à ce projet pour le moment !!!
 
+
 Mise en place d'une visualisation des syslog Palo Alto dans la suite ELK (ElasticSearch / Logstash / Kibana).
 J'en profite au passage pour traduire en francais les explications fournies par sm-biz (merci à lui).
 
+Récupération des données Palo Alto v8.1
+
+***
 
 ## Tableaux de bord
 
